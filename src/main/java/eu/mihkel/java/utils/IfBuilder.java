@@ -27,7 +27,7 @@ public class IfBuilder<T> {
     }
 
     /**
-     * Executes suppliers until. If one fails will return without executing rest of the result.
+     * Executes suppliers in sequence. If one fails will return without executing rest of the suppliers.
      * @return lastresult
      */
     public Optional<T> build() {
